@@ -1,0 +1,35 @@
+%button {
+    border-radius: 5px;
+}
+
+.button {
+    &-outline{
+        @extend %button;
+        border: white 1px solid;
+        background-color: $black_opacity;
+    }
+
+    &-solid{
+        @extend %button;
+        background-color: red;
+        border: none;
+    }
+}
+
+.nav_button{
+    width: 150px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+#emailInput{
+    height: 55px;
+    width: 400px;
+    padding-left: 20px;
+}
+
+#start{
+    height: 55px;
+    width: 200px;
+    font-size: 20px;
+}
